@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>uChat | Login</title>
+        <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+    <body>
+        <div class="app-container">
+            <main>
+                <header>
+                    <h1>uChat</h1>
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <div class="hamburger-icon"></div>
+                        <div class="hamburger-icon"></div>
+                        <div class="hamburger-icon"></div>
+                    </div>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <h3>Online</h3>
+                        <p>user1</p>
+                        <p>user2</p>
+                        <p>user3</p>
+                    </div>
+                </header>
+                <div class="login-container" id="login-container">
+                    <form class="login-form" id="login-form" method="POST" action="/login">
+                        <label>Username:</label>
+                        <input type="text" id="username-input" name="username" placeholder="Enter user1 or user2" required>
+                        <label>Password:</label>
+                        <input type="password" id="password-input" name="password" placeholder="apples" required>
+                        <div class="login-form-buttons">
+                            <button type="submit" class="create-button" id="create-button">Create New User</button>
+                            <button type="submit" class="login-button" id="login-button">Connect</button> 
+                        </div> 
+                    </form>
+                </div>
+                <footer>
+                    <p>Created by Joseph Gallant</p>
+                </footer>
+            </main>
+        </div>
+        <script src="../static/script.js"></script>
+    </body>
+</html>

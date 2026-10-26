@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>uChat</title>
+        <link rel="stylesheet" href="../static/css/styles2.css">
+    </head>
+    <body>
+        <div class="app-container">
+            <main>
+                <header>
+                    <h1>uChat</h1>
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <div class="hamburger-icon"></div>
+                        <div class="hamburger-icon"></div>
+                        <div class="hamburger-icon"></div>
+                    </div>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <h3>Online</h3>
+                        <p>user1</p>
+                        <p>user2</p>
+                    </div>
+                </header>
+                <div class="history-container" id="history-container">
+                    {{ messages|safe }}
+                </div>
+                <div class="submission-container" id="submission-container">
+                    <form id="submission-form" method="POST" action="/submit">
+                        <input type="text" id="message-input" name="message" placeholder="Enter a message..."> 
+                        <button type="submit" id="send-button">Send</button>
+                    </form>
+                </div>
+                <footer>
+                    <p>Created by Joseph Gallant</p>
+                </footer>
+            </main>
+        </div>
+        <script src="../static/script.js"></script>
+    </body>
+</html>
