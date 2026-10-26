@@ -1,0 +1,25 @@
+1) enter authentication information and get back a token (simple int) to use in future interactions.
+2) ask for a list of other connected clients.
+3) request to communicate with one of them
+4) be able to pass a message to the chosen client.
+5) have the other client respond.
+
+
+JS
+Add a on click event listener that expands a fixed container containing online users.
+Add a on click event listener that prefills the text box with the target users name '\adam hello
+
+
+
+In short:
+
+Login either with exisitng credentials or make a new user
+
+On login force the user into the global chat, sending the global room request
+
+If a client selects a user from the online menu, make an intial request to fetch those messages
+
+Then every 5 seconds, send out further requests for messages in that chat
+
+If the user selects another user, the last two steps change accordingly
+
